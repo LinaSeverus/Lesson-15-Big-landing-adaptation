@@ -1,0 +1,51 @@
+.subscribe_block_wrapper {
+    width: 100%;
+    padding: 145px 0 140px;
+    background-color: #f5f0dd;
+
+    .subscribe_block {
+        text-align: center;
+
+        h2 {
+            font-weight: 700;
+            font-size: 42px;
+            color: white;
+            margin-bottom: 35px;
+            @include media-font-size (955px, 30px);
+            @include media-font-size (440px, 18px)
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            color: white;
+            margin-bottom: 60px;
+        }
+
+        .subscribe-form {
+            display: flex;
+            justify-content: center;
+
+            .email {
+            width: 520px;
+            border-radius: 5px;
+            padding: 32px 38px;
+            font-size: 16px;
+            margin-right: 23px;
+            }
+            .subscribe-btn {
+                @include button(#ff3f40, white);
+                font-size: 18px;
+                font-weight: bold;
+                padding: 32px 55px;
+                border: 2px solid $color-1;
+                border-radius: 5px;
+
+                &:hover {
+                    @include button(white, #ff3f40);
+                    transition: 0.5s;
+                }
+                @include media-font-size (440px, 14px)
+            }
+        }
+    }
+}

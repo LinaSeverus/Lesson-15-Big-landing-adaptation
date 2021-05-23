@@ -1,0 +1,33 @@
+footer {
+    width: 100%;
+    background-color: $color-2;
+
+    .footer_block {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            padding: 60px 0 40px 0;
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: 400;
+                font-size: 16px;
+                &:hover {
+                    color: $color-1;
+                    transition: 0.2s;
+                }
+                @include media-font-size (320px, 11px)
+            }
+        }
+
+        .links {
+            padding: 45px 0 30px;
+
+            a:not(:last-child) {
+                padding-right: 15px;
+            }
+            
+        }
+    }
+}

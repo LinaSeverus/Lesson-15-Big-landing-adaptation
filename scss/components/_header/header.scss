@@ -1,0 +1,38 @@
+    
+    header {
+        width: 100%;
+        padding-top: 30px;
+        background-color: $background-color;
+        
+        .container {
+            
+            .header-wrapper {
+                width: 100%;
+                margin: 0 auto;
+                background-color: $color-2;
+                padding: 40px 0 40px;
+                nav {
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center; 
+                        
+                        li  {
+                                                
+                            a {
+                                color: white;
+                                font-weight: bold;
+                                font-size: 13px;
+                                padding: 38px 45px 38px;
+
+                                &:hover {
+                                    background-color: $color-1;
+                                    transition: 0.5s;
+                                }    
+                            }
+                        }
+                    }    
+                }
+            }
+        }    
+    }

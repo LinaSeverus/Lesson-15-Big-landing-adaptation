@@ -1,0 +1,110 @@
+.our_team_block {
+    width: 100%;
+    margin-bottom: 110px;
+    
+    
+    .our_team_article {
+        margin: 0 50% 70px 0;
+
+        h2 {
+            font-weight: 700;
+            font-size: $h2-font-size;
+            color: #4c4c4c;
+            margin-bottom: 35px;
+            @include media-font-size (955px, 30px);
+            @include media-font-size (440px, 18px)
+        }
+
+        p {
+            font-weight: 400;
+            font-size: $paragraph-font-size;
+            line-height: $paragraph-line-height;
+            @include media-font-size (767px, 14px)
+            
+        }
+
+        .line {
+            width: $underline-width;
+            padding-top: 65px;
+            border-bottom: 2px solid $color-1;
+            
+        }
+    }
+
+    .team-gallery-wrapper {
+        display: flex;
+        justify-content: space-between;
+        
+        .chief-photo {
+            margin-right: 70px;
+            img {
+                width: 322px;
+                height: 495px;
+            }
+        }
+        
+        .right_block {
+
+            .team-article {
+                margin-bottom: 75px;
+                
+                h3 {
+                    padding-top: 10px;
+                    font-weight: 700;
+                    font-size: 30px;
+                    margin-bottom: 35px;
+                    width: 50%;
+                    @include media-font-size (768px, 25px);
+                    @include media-font-size (440px, 18px)
+                }
+                p {
+                    font-weight: 400;
+                    font-size: $paragraph-font-size;
+                    line-height: $paragraph-line-height;
+                    margin-bottom: 50px;
+                    width: 50%;
+                    @include media-font-size (767px, 14px)
+                }
+
+                .link-menu {
+                    
+                    ul {
+                        display: flex;
+                        justify-content: flex-start;
+
+                        li {
+
+                            a {
+                                font-size: 18px;
+                                font-style: italic;
+                                color: black;
+                                padding-right: 15px;
+                                
+                                &:hover {
+                                    color: $color-1;
+                                    transition: 0.2s;
+                                }
+                                @include media-font-size (320px, 14px)
+                            }
+                        }
+                    }
+                }
+            }
+
+            .team-photos {
+                display: flex;
+                justify-content: space-between;
+                
+                div {
+                    width: 25%;
+                    
+                    img {
+                        width: 100%; 
+                        padding: 0 10px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
